@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bgcl1: hsl(31, 77%, 52%); /* Bright orange */
+  --bgcl2: hsl(184, 100%, 22%); /* Dark cyan */
+  --bgcl3: hsl(179, 100%, 13%); /* Very dark cyan */
+
+  --color4: hsla(0, 0%, 100%, 0.75); /* Transparent white (paragraphs) */
+  --color5: hsl(
+    0,
+    0%,
+    95%
+  ); /* Very light gray (background, headings, buttons) */
+
+  /* font-family: 'Big Shoulders Display', cursive;
+        font-family: 'Lexend Deca', sans-serif; */
+
+  /* Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+    - Weights: 400
+
+    - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+    - Weights: 700 */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  height: 85%;
+}
+
+.inner {
+  max-width: 1440px;
+  height: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 80%;
+}
+
+.cnt {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
+  padding: 70px;
+}
+
+.txt-h1 {
+  color: var(--color5);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.cnt,
+p {
+  color: var(--color5);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 25px;
+}
+
+.ind1 {
+  background-color: var(--bgcl1);
+  border-radius: 10px 0 0 10px;
+}
+
+.ind2 {
+  background-color: var(--bgcl2);
+}
+
+.ind3 {
+  background-color: var(--bgcl3);
+  border-radius: 0 10px 10px 0;
+}
+
+button {
+  border-radius: 34px;
+  height: 46px;
+  line-height: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 120px;
+  font-size: 16px;
+  padding: 12px;
+  background-color: var(--color5);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+}
+
+.btn-1 {
+  color: var(--bgcl1);
+}
+
+.btn-1:hover {
+  background-color: var(--bgcl1);
+  color: var(--color5);
+  border: 2px solid hsl(0, 0%, 95%);
+
+  border-radius: 34px;
+  height: 46px;
+  line-height: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 120px;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-2 {
+  color: var(--bgcl2);
+}
+
+.btn-2:hover {
+  background-color: var(--bgcl2);
+  color: var(--color5);
+  border: 2px solid hsl(0, 0%, 95%);
+
+  border-radius: 34px;
+  height: 46px;
+  line-height: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 120px;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-3 {
+  color: var(--bgcl3);
+}
+
+.btn-3:hover {
+  background-color: var(--bgcl3);
+  color: var(--color5);
+  border: 2px solid hsl(0, 0%, 95%);
+
+  border-radius: 34px;
+  height: 46px;
+  line-height: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  width: 120px;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --bgcl1: hsl(31, 77%, 52%); /* Bright orange */
+    --bgcl2: hsl(184, 100%, 22%); /* Dark cyan */
+    --bgcl3: hsl(179, 100%, 13%); /* Very dark cyan */
+
+    --color4: hsla(0, 0%, 100%, 0.75); /* Transparent white (paragraphs) */
+    --color5: hsl(0, 0%, 95%); /* Very light gray (background, headings, buttons) */
+
+    /* font-family: 'Big Shoulders Display', cursive; */
+
+    /* Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+    - Weights: 400
+
+    - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+    - Weights: 700 */
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.inner {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    color: var(--color5);
+}
+
+p {
+    color: var(--color4);
+}
+
+.ind1{
+    background-color: var(--bgcl1);
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+}
+.ind2{
+    background-color: var(--bgcl2);
+    padding: 30px;
+}
+.ind3{
+    background-color: var(--bgcl3);
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+button {
+    background-color: var(--color5);
+}
+
+.btn-1{
+    /* -webkit-border-radius: 34px;
+   -moz-border-radius: 34px; */
+   border-radius: 34px;
+   height: 16px;
+   line-height: 16px;
+   color: #E38826;
+   font-family: Brush Script MT;
+   width: 120px;
+   font-size: 16px;
+   padding: 12px;
+   background-color: #F2F2F2;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+    color: var(--bgcl1);
+}
+.btn-2{
+    color: var(--bgcl2);
+}
+.btn-3{
+    color: var(--bgcl3);
+}
